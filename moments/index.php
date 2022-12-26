@@ -104,6 +104,7 @@
 </body>
 
 <script src="assets/jquery.js"></script>
+<script src="assets/jquery.lazy.min.js"></script>
 <script src="assets/main.js" ></script>
 
 </body>
