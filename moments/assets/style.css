@@ -184,34 +184,42 @@ header a {
 /* =Site specific
 -------------------------------------------------------------- */
 .col-10 {
-  width: 10%;
+  width: 12.5%;
   padding: 0 15px;
-  max-width: 10%;
+  max-width: 12.5%;
 }
 .une-diapo {
   margin: 0;
   padding: 15px 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  border: .4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 190px;
+  position: relative;
 }
 .une-diapo:hover {
   background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: .4px solid rgba(0, 0, 0, 0.3);
 }
 .une-diapo img {
   display: block;
   width: auto;
   height: auto;
   margin: 0 auto;
-  max-height: 124px;
-  max-width: 100%;
-  border: .4px solid rgba(0,0,0,0.4);
+  max-height: 130px;
+  max-width: 98px;
 }
 .une-diapo figcaption {
   text-align: center;
   display: block;
-  font-size: 10px;
+  font-size: 8px;
   margin-top: 15px;
   opacity: 0.5;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  text-align: center;
+  width: 100%;
 }
 .lightbox-container {
   background: #ffffff;
