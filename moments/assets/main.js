@@ -3,7 +3,7 @@ window.addEventListener('load', function(event) {
 
     $('.lazy').Lazy({
           scrollDirection: 'vertical',
-          placeholder: "https://slrncl.com/dev/moments/assets/img/loader.gif",
+          placeholder: "https://slrncl.com/moments/assets/img/loader.gif",
           effect: 'fadeIn',
           effectTime: 1000,
           threshold: 0,

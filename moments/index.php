@@ -57,8 +57,8 @@
       $images = glob($dir_name."*.jpg");
       foreach( array_reverse($images) as $image ) {
 
-      echo '<div class="col-x"><figure class="une-diapo" data-image-src="https://slrncl.com/dev/moments/'.$image.'">';
-      echo '<img data-src="https://slrncl.com/dev/moments/'.$image.'" alt="'.substr($image, 11).'" class="lazy" >';
+      echo '<div class="col-x"><figure class="une-diapo" data-image-src="https://slrncl.com/moments/'.$image.'">';
+      echo '<img data-src="https://slrncl.com/moments/'.$image.'" alt="'.substr($image, 11).'" class="lazy" >';
       echo '<figcaption>'.substr($image, 11).'</figcaption>';
       echo '</figure></div>';
 
