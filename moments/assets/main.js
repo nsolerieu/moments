@@ -29,7 +29,7 @@ $(document).ready(function(){
 
      $('#body').prepend(
       '<div class="lightbox-container">' +
-        '<div class="close-lightbox">[x] Close</div>' +
+        '<div class="close-lightbox">Close</div>' +
         '<div class="prev-image"><<</div>' +
         '<div class="next-image">>></div>' +
         '<img src="' + lightboximage + '" class="lightbox-image"/>' +

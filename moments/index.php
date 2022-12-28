@@ -40,16 +40,16 @@
             <span class="nav-separator">/</span>
             <a href="#gallery">moments</a>
             <span class="nav-separator">/</span>
-            <a href="#about">what</a>
+            <a href="#about">about</a>
           </nav>
         </div>
       </div>
     </div>
   </header>
 
-  <section id="gallery" >
+  <section id="work" >
     <div class="container">
-      <div class="row" style="flex-wrap: wrap">
+      <div class="gallery-flex-containter" >
 
       <?php
 
@@ -57,7 +57,7 @@
       $images = glob($dir_name."*.jpg");
       foreach( array_reverse($images) as $image ) {
 
-      echo '<div class="col-10"><figure class="une-diapo" data-image-src="https://slrncl.com/dev/moments/'.$image.'">';
+      echo '<div class="col-x"><figure class="une-diapo" data-image-src="https://slrncl.com/dev/moments/'.$image.'">';
       echo '<img data-src="https://slrncl.com/dev/moments/'.$image.'" alt="'.substr($image, 11).'" class="lazy" >';
       echo '<figcaption>'.substr($image, 11).'</figcaption>';
       echo '</figure></div>';
@@ -70,7 +70,7 @@
     </div>
   </section>
 
-  <footer class="padded-section">
+  <footer class="padded-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-50">
@@ -79,9 +79,12 @@
           </p>
         </div>
         <div class="col-50">
-          <p class="text-small">
-            an honest explainer will live here
-          </p>
+          <p class="text-regular">
+            I got away from instagram but still wanted a place to have have something similar.
+            This is a sort of of visual timeline that just requires me to drop a photo in folder.
+            Although this is an attempt at exiting the voyeurism of sociual media, there is still some ego in needing to keep a record. I'm working on it, here.
+            This is mostly intended for my personal consumption and will live on my domain. If you read these words and feel anything from perusing this gallery, that's great. But there is really no goal to this.
+            We all see things. Life happens all around us. Few can catch and hold on to the feeling of a moment withou the help of photography. These are intentionally low-res, the moment matter. I remember the details.
         </div>
       </div>
     </div>
@@ -89,10 +92,10 @@
 
   <footer class="padded-section">
     <div class="container">
-      <div class="row">
+      <div class="row full-row-border-top">
         <div class="col-100">
           <p class="text-small text-color-secondary">
-            * Cheers
+            * That's all my stuff – I live in the same world
           </p>
         </div>
       </div>

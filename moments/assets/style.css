@@ -183,7 +183,11 @@ header a {
 /* --------------------------------------------------------------
 /* =Site specific
 -------------------------------------------------------------- */
-.col-10 {
+.gallery-flex-containter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-x {
   width: 12.5%;
   padding: 0 15px;
   max-width: 12.5%;
@@ -237,15 +241,57 @@ header a {
   left: 50%;
   z-index: 5;
   transform: translate(-50%, -50%);
-  max-width: 720px;
-  max-height: 720px;
+  max-width: 620px;
+  max-height: 620px;
   height: auto;
   width: auto;
 }
 .close-lightbox {
   cursor: pointer;
 }
-
+.lightbox-image-name {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  width: 320px;
+  text-align: center;
+  margin-left: -160px;
+}
+.close-lightbox {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  width: 320px;
+  text-align: center;
+  margin-left: -160px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.prev-image {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  line-height: 50px;
+  left: 15px;
+  margin-top: -25px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.next-image {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  right: 15px;
+  line-height: 50px;
+  margin-top: -25px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.close-lightbox:hover,
+.prev-image:hover,
+.next-image:hover {
+  opacity: 1;
+}
 /* --------------------------------------------------------------
 /* =SMARTPHONE
 -------------------------------------------------------------- */
@@ -287,5 +333,20 @@ header a {
   .one-project-row.active:hover::after, .one-project-row.active::after {
     font-size: 1rem;
     top: 18px;
+  }
+  .col-x {
+    width: 50%;
+    padding: 0 15px;
+    max-width: 50%;
+    min-width: 120px;
+  }
+  .lightbox-image {
+    max-width: 80%;
+  }
+  .next-image, .prev-image {
+    top: auto;
+    bottom: 15px;
+    height: 30px;
+    line-height: 30px;
   }
 }
