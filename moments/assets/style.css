@@ -293,6 +293,16 @@ header a {
   opacity: 1;
 }
 /* --------------------------------------------------------------
+/* =TABLET
+-------------------------------------------------------------- */
+@media screen and (max-width: 1280px) {
+  .col-x {
+    width: 20%;
+    padding: 0 15px;
+    max-width: 20%;
+  }
+}
+/* --------------------------------------------------------------
 /* =SMARTPHONE
 -------------------------------------------------------------- */
 @media screen and (max-width: 821px) {
@@ -306,7 +316,8 @@ header a {
     font-size: 2rem;
   }
   .row {
-    display: block;
+    display: inline-block;
+    width: 100%;
   }
   .col-50, .col-25, .col-75 {
     width: 100%;
