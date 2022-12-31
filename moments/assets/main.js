@@ -22,6 +22,7 @@ $(document).ready(function(){
   var previouslightboximage = "";
 
   $('.une-diapo').on( 'click', function() {
+    $('body').css( "overflow-y", "hidden" );
     activediapo = $(this);
     lightboximage = $(this).attr('data-image-src');
     nextlightboximage = activediapo.parent().next().find('.une-diapo').attr('data-image-src');
@@ -33,7 +34,7 @@ $(document).ready(function(){
         '<div class="prev-image"><<</div>' +
         '<div class="next-image">>></div>' +
         '<img src="' + lightboximage + '" class="lightbox-image"/>' +
-        '<div class="lightbox-image-name">' + lightboximage.substr(42) + ' </div>' +
+        '<div class="lightbox-image-name">' + lightboximage.substr(38) + ' </div>' +
       '</div>'
     );
 
@@ -41,20 +42,21 @@ $(document).ready(function(){
 
   $(document).on("click", ".close-lightbox" , function() {
     $(this).parent().remove();
+    $('body').css( "overflow-y", "auto" );
   });
 
   $(document).on("click", ".next-image" , function() {
     activediapo = activediapo.parent().next().find('.une-diapo');
     nextlightboximage = activediapo.parent().next().find('.une-diapo').attr('data-image-src');
     $( ".lightbox-image" ).attr( "src", nextlightboximage );
-    $( ".lightbox-image-name" ).html( nextlightboximage.substr(42) );
+    $( ".lightbox-image-name" ).html( nextlightboximage.substr(38) );
   });
 
   $(document).on("click", ".prev-image" , function() {
     activediapo = activediapo.parent().prev().find('.une-diapo');
     previouslightboximage = activediapo.parent().prev().find('.une-diapo').attr('data-image-src');
     $( ".lightbox-image" ).attr( "src", previouslightboximage );
-    $( ".lightbox-image-name" ).html( previouslightboximage.substr(42) );
+    $( ".lightbox-image-name" ).html( previouslightboximage.substr(38) );
   });
 
 });

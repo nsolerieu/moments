@@ -36,9 +36,7 @@
       <div class="row">
         <div class="col-100">
           <nav class="header-navigation">
-            <span class="logo-ish">slrncl</span>
-            <span class="nav-separator">/</span>
-            <a href="#gallery">moments</a>
+            <span class="logo-ish">moments</span>
             <span class="nav-separator">/</span>
             <a href="#about">about</a>
           </nav>
@@ -47,7 +45,7 @@
     </div>
   </header>
 
-  <section id="work" >
+  <section id="gallery" >
     <div class="container">
       <div class="gallery-flex-containter" >
 

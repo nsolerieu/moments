@@ -272,7 +272,7 @@ header a {
   top: 50%;
   height: 50px;
   line-height: 50px;
-  left: 15px;
+  left: 10%;
   margin-top: -25px;
   cursor: pointer;
   opacity: 0.5;
@@ -281,7 +281,7 @@ header a {
   position: absolute;
   top: 50%;
   height: 50px;
-  right: 15px;
+  right: 10%;
   line-height: 50px;
   margin-top: -25px;
   cursor: pointer;
