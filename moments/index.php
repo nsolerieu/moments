@@ -4,24 +4,22 @@
 
 <head>
 
-  <title>slrcnl</title>
-
-  <!-- Meta Zone -->
+  <title>moments</title>
 
   <meta charset="utf-8">
-  <meta name="description" content="" />
+  <meta name="description" content="An improvised instagram replacement" />
   <meta name="robots" content="index, follow, all" />
 
   <meta name="author" content="Nicolas SOLERIEU">
   <meta name="publisher" content="Nicolas SOLERIEU">
   <meta name="google" content="notranslate" />
 
-  <!-- User agent / Viewport / compression -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
   <meta name="viewport" content="initial-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-	<!-- CSS Zone -->
   <link rel="stylesheet" href="assets/style.css" >
 
 </head>
@@ -98,7 +96,7 @@
       <div class="row full-row-border-top">
         <div class="col-100">
           <p class="text-small text-color-secondary">
-            * That's all my stuff – I live in the same world
+            * I live in the same world, look around - or check this out on <a href="https://github.com/nsolerieu/moments">github</a>
           </p>
         </div>
       </div>
