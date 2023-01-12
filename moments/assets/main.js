@@ -22,13 +22,13 @@ $(document).ready(function(){
   var previouslightboximage = "";
 
   $('.une-diapo').on( 'click', function() {
+
     $('body').css( "overflow-y", "hidden" );
+
     activediapo = $(this);
     lightboximage = $(this).attr('data-image-src');
-    nextlightboximage = activediapo.parent().next().find('.une-diapo').attr('data-image-src');
-    previouslightboximage = activediapo.parent().prev().find('.une-diapo').attr('data-image-src');
 
-     $('#body').prepend(
+    $('#body').prepend(
       '<div class="lightbox-container">' +
         '<div class="close-lightbox">Close</div>' +
         '<div class="prev-image"><<</div>' +
@@ -47,14 +47,14 @@ $(document).ready(function(){
 
   $(document).on("click", ".next-image" , function() {
     activediapo = activediapo.parent().next().find('.une-diapo');
-    nextlightboximage = activediapo.parent().next().find('.une-diapo').attr('data-image-src');
+    nextlightboximage = activediapo.attr('data-image-src');
     $( ".lightbox-image" ).attr( "src", nextlightboximage );
     $( ".lightbox-image-name" ).html( nextlightboximage.substr(38) );
   });
 
   $(document).on("click", ".prev-image" , function() {
     activediapo = activediapo.parent().prev().find('.une-diapo');
-    previouslightboximage = activediapo.parent().prev().find('.une-diapo').attr('data-image-src');
+    previouslightboximage = activediapo.attr('data-image-src');
     $( ".lightbox-image" ).attr( "src", previouslightboximage );
     $( ".lightbox-image-name" ).html( previouslightboximage.substr(38) );
   });
